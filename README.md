@@ -44,9 +44,9 @@ Each project includes a testbench designed for high-speed simulation.
 ---
 
 ## 📂 Project Structure
-* `/src`: Verilog source files (`.v`)
-* `/tb`: Testbench files for simulation
-* `/xdc`: Xilinx Design Constraints for the Nexys A7
+* `.v`: Verilog source files (`.v`)
+* `_TB.v`: Testbench files for simulation
+* `.xdc`: Xilinx Design Constraints for the Nexys A7
 
 ## 🔧 How to Build
 1. Create a new project in **Vivado**.
