@@ -1,2 +1,51 @@
 # Simple-HDL-Implementations
-Simple implementations of various logic components or projects based in verilog HDL.
+A collection of hardware design projects for the **Digilent Nexys A7-100T FPGA**. These projects demonstrate fundamental FPGA concepts, focusing on synchronous design patterns and hardware interfacing.
+
+## 🚀 Projects Included
+
+### 1. Basic LED Blink (Toggle Pattern)
+* **Description:** A simplified 1Hz LED blinker that uses a counter to directly toggle the output state.
+* **Key Concept:** * **State Toggling:** Combines timing and output logic into a single block. 
+    * **Standalone Design:** Specifically built for driving a single LED. Since the signal is high for 1 second, it is not reusable for driving other synchronous logic components.
+* **Source:** `led_blink_1hz.v`
+
+### 1. 1Hz LED Blink (Enable Generator Pattern)
+* **Description:** A synchronous blinker that toggles an LED at 1Hz.
+* **Key Concept:** Demonstrates the use of an **Enable Generator** rather than a clock divider. This ensures the entire design stays on the 100MHz global clock tree, preventing clock skew and timing violations common in "ripple clock" designs.
+* **Source:** `led_blink_1hz_enGen.v`
+
+### 2. BCD 7-Segment Counter
+* **Description:** A decimal counter (0-9) that increments every second and displays the value on the seven-segment display.
+* **Key Concept:** * **BCD Logic:** Uses a Binary Coded Decimal counter that resets at 9 rather than 15.
+    * **Hardware Interfacing:** Features a combinational decoder to drive the active-low segments of the Nexys A7.
+    * **Resource Management:** Drives the 8-digit anode bus to enable only the targeted display digit.
+* **Source:** `BCD_7Seg.v`
+
+---
+
+## 🛠️ Hardware Specifications
+* **FPGA:** Nexys A7-100T (XC7A100T-1CSG324C)
+* **Clock:** 100 MHz On-board Oscillator (Pin E3)
+* **Reset:** CPU_RESET Pushbutton (Pin C12) — *Active-Low*
+* **Display:** Common Anode Seven-Segment Display — *Active-Low Segments*
+
+---
+
+## 🧪 Simulation & Testbench
+Each project includes a testbench designed for high-speed simulation. 
+
+---
+
+## 📂 Project Structure
+* `/src`: Verilog source files (`.v`)
+* `/tb`: Testbench files for simulation
+* `/xdc`: Xilinx Design Constraints for the Nexys A7
+
+## 🔧 How to Build
+1. Create a new project in **Vivado**.
+2. Add the source files from the `src` directory.
+3. Add the `.xdc` file for pin mapping.
+4. Run **Synthesis** and **Implementation**.
+5. Generate **Bitstream** and program your Nexys A7 via the Hardware Manager.
+
+---
