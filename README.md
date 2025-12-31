@@ -6,7 +6,7 @@ A collection of hardware design projects for the **Digilent Nexys A7-100T FPGA**
 ### 1. Basic LED Blink (Toggle Pattern)
 * **Description:** A simplified 1Hz LED blinker that uses a counter to directly toggle the output state.
 * **Key Concept:**
-   * * **State Toggling:** Combines timing and output logic into a single block. 
+   * **State Toggling:** Combines timing and output logic into a single block. 
    * **Standalone Design:** Specifically built for driving a single LED. Since the signal is high for 1 second, it is not reusable for driving other synchronous logic components.
 * **Source:** `led_blink_1hz.v`
 
