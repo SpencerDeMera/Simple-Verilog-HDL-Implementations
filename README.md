@@ -1,4 +1,4 @@
-# Simple-HDL-Implementations
+# Simple-Verilog-HDL-Implementations
 A collection of hardware design projects for the **Digilent Nexys A7-100T FPGA**. These projects demonstrate fundamental FPGA concepts, focusing on synchronous design patterns and hardware interfacing.
 
 ## 🚀 Projects Included
