@@ -1,4 +1,3 @@
-# Simple-HDL-Implementations
 # Simple-Verilog-HDL-Implementations
 A collection of hardware design projects for the **Digilent Nexys A7-100T FPGA**. These projects demonstrate fundamental FPGA concepts, focusing on synchronous design patterns and hardware interfacing.
 
@@ -72,10 +71,8 @@ Each project includes a testbench designed for high-speed simulation.
 ## 📂 Project Structure
 * `.v`: Verilog source files (`.v`)
 * `_TB.v`: Testbench files for simulation
-* `.xdc`: Xilinx Design Constraints for the Nexys A7
 * `.xdc`: Xilinx Design Constraints for the Nexys A7 (not all projects have this)
 
-## 🔧 How to Build
 ## 🔧 How to Build (If project is designed for physical implementation)
 1. Create a new project in **Vivado**.
 2. Add the source files from the `src` directory.
