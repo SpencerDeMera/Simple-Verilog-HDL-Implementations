@@ -40,7 +40,6 @@ A collection of hardware design projects for the **Digilent Nexys A7-100T FPGA**
 * **Key Concept:**
    * **Status Flag Generation:** Features dedicated hardware logic to update Carry, Overflow, Sign, and Zero flags for every operation, providing the necessary feedback for conditional branching.
    * **Arithmetic Integrity:** Implements 2's complement addition and subtraction using a 9-bit temporary register to accurately capture carry-out and detect signed overflow.
-<<<<<<< HEAD
    * **Automated Verification:** Utilizes a self-checking testbench with a reference model and File I/O system tasks (`$fopen`, `$fdisplay`) to log comprehensive simulation results to an external text file for hardware validation.
 * **Source:** `ALU.v`, `ALU_TRB.v`
 
@@ -52,12 +51,6 @@ A collection of hardware design projects for the **Digilent Nexys A7-100T FPGA**
    * **Synchronous Design:** Uses a single 16-bit counter to produce a pulse instead of a divided clock, keeping the logic perfectly aligned with the 100MHz system clock.
    * **Automated Verification:** Utilizes a self-checking testbench with a reference model and File I/O system tasks (`$fopen`, `$fdisplay`) to log comprehensive simulation results to an external text file for hardware validation.
 * **Source:** `BaudRateGen.v`, `BaudRateGen_TB.v`
-
----
-=======
-   * **Automated Verification:** Utilizes a self-checking testbench with a golden reference model and File I/O system tasks (`$fopen`, `$fdisplay`) to log comprehensive simulation results to an external text file for hardware validation.
-* **Source:** `ALU.v`
->>>>>>> 6b55773d8570ecceae333e0402b9504b9f124000
 
 ## 🛠️ Hardware Specifications
 * **FPGA:** Nexys A7-100T (XC7A100T-1CSG324C)
