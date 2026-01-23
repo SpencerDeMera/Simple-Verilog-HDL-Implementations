@@ -1,4 +1,5 @@
 # Simple-HDL-Implementations
+# Simple-Verilog-HDL-Implementations
 A collection of hardware design projects for the **Digilent Nexys A7-100T FPGA**. These projects demonstrate fundamental FPGA concepts, focusing on synchronous design patterns and hardware interfacing.
 
 ## 🚀 Projects Included
@@ -40,6 +41,7 @@ A collection of hardware design projects for the **Digilent Nexys A7-100T FPGA**
 * **Key Concept:**
    * **Status Flag Generation:** Features dedicated hardware logic to update Carry, Overflow, Sign, and Zero flags for every operation, providing the necessary feedback for conditional branching.
    * **Arithmetic Integrity:** Implements 2's complement addition and subtraction using a 9-bit temporary register to accurately capture carry-out and detect signed overflow.
+<<<<<<< HEAD
    * **Automated Verification:** Utilizes a self-checking testbench with a reference model and File I/O system tasks (`$fopen`, `$fdisplay`) to log comprehensive simulation results to an external text file for hardware validation.
 * **Source:** `ALU.v`, `ALU_TRB.v`
 
@@ -53,6 +55,10 @@ A collection of hardware design projects for the **Digilent Nexys A7-100T FPGA**
 * **Source:** `BaudRateGen.v`, `BaudRateGen_TB.v`
 
 ---
+=======
+   * **Automated Verification:** Utilizes a self-checking testbench with a golden reference model and File I/O system tasks (`$fopen`, `$fdisplay`) to log comprehensive simulation results to an external text file for hardware validation.
+* **Source:** `ALU.v`
+>>>>>>> 6b55773d8570ecceae333e0402b9504b9f124000
 
 ## 🛠️ Hardware Specifications
 * **FPGA:** Nexys A7-100T (XC7A100T-1CSG324C)
@@ -60,23 +66,19 @@ A collection of hardware design projects for the **Digilent Nexys A7-100T FPGA**
 * **Reset:** CPU_RESET Pushbutton (Pin C12) — *Active-Low*
 * **Display:** Common Anode Seven-Segment Display — *Active-Low Segments*
 
----
-
 ## 🧪 Simulation & Testbench
 Each project includes a testbench designed for high-speed simulation. 
-
----
 
 ## 📂 Project Structure
 * `.v`: Verilog source files (`.v`)
 * `_TB.v`: Testbench files for simulation
 * `.xdc`: Xilinx Design Constraints for the Nexys A7
+* `.xdc`: Xilinx Design Constraints for the Nexys A7 (not all projects have this)
 
 ## 🔧 How to Build
+## 🔧 How to Build (If project is designed for physical implementation)
 1. Create a new project in **Vivado**.
 2. Add the source files from the `src` directory.
 3. Add the `.xdc` file for pin mapping.
 4. Run **Synthesis** and **Implementation**.
 5. Generate **Bitstream** and program your Nexys A7 via the Hardware Manager.
-
----
