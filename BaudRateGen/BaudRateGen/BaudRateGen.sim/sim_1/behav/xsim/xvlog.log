@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/My Drive/_iCloud/EGEC/HDL/Verilog/BaudRateGen/BaudRateGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BaudRateGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/My Drive/_iCloud/EGEC/HDL/Verilog/BaudRateGen/BaudRateGen_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BaudRateGen_TB
+WARNING: [VRFC 10-8374] loop variable declaration is not allowed in this mode of Verilog [G:/My Drive/_iCloud/EGEC/HDL/Verilog/BaudRateGen/BaudRateGen_TB.v:94]
